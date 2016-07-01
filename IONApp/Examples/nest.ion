@@ -1,0 +1,14 @@
+(let loop (fun (from to)
+    (print "loop " from ":" to nl)
+    (if (= from to) () (loop (+ from 1) to))
+))
+
+(let infinite-loop (fun (x max)
+    (print "infinite-loop " x nl)
+    ;(if (= x max) (x) (infinite-loop (+ x 1) max))
+    (if (= x max) () (infinite-loop (+ x 1) max))
+))
+
+;(loop 0 5)
+
+(infinite-loop 0 -1)

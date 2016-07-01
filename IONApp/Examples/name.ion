@@ -1,0 +1,6 @@
+(let xxx (fun x (print x nl)))
+(let yyy xxx)
+(let zzz (fun x (print x nl)))
+(print (?guid xxx) nl)
+(print (?guid yyy) nl)
+(print (?guid zzz))
